@@ -91,7 +91,7 @@ def color_code_sentence(sentence):
     return f'<span style="background-color: {color}">{sentence}</span>'
 
 
-text = st.text_area("Your text", sample_text, height=250, label_visibility="collapsed")
+text = st.text_area("Your text", sample_text, label_visibility="collapsed")
 paragraphs = text.split("\n")
 colored_text = ""
 for paragraph in paragraphs:
