@@ -17,7 +17,7 @@ icon("🌈")
 st.title("Color-code your writing")
 st.write(
     """
-    Just add some text below and this app will color-code it based on sentence length. 
+    Just add some text below and this app will color-code it based on the sentence length. 
     Good texts vary the sentence length, so they should have <span style="background-color: #F8F4C6; color: rgb(49, 51, 63)">lots</span> <span style="background-color: #FAD1F0; color: rgb(49, 51, 63)">of</span> <span style="background-color: #C8F6C9; color: rgb(49, 51, 63)">colors</span>! 
     """,
     unsafe_allow_html=True,
