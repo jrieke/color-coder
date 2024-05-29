@@ -18,7 +18,7 @@ st.title("Color-code your writing")
 st.write(
     """
     Just add some text below and this app will color-code it based on the sentence length. 
-    Good texts vary the sentence length, so they should have <span style="background-color: #F8F4C6; color: rgb(49, 51, 63)">lots</span> <span style="background-color: #FAD1F0; color: rgb(49, 51, 63)">of</span> <span style="background-color: #C8F6C9; color: rgb(49, 51, 63)">colors</span>! 
+    Good texts vary the sentence length, so they should have :orange-background[lots] :violet-background[of] :green-background[colors]! 
     """,
     unsafe_allow_html=True,
 )
@@ -81,14 +81,14 @@ def split_into_sentences(text):
 def color_code_sentence(sentence):
     words = len(sentence.split(" "))
     if words <= 2:
-        color = "#F8F4C6"
+        color = "orange"
     elif words <= 5:
-        color = "#FAD1F0"
+        color = "violet"
     elif words <= 10:
-        color = "#C8F6C9"
+        color = "green"
     else:
-        color = "#A5F6EF"
-    return f'<span style="background-color: {color}; color: rgb(49, 51, 63)">{sentence}</span>'
+        color = "blue"
+    return f":{color}-background[{sentence}]"
 
 
 text = st.text_area("Your text", sample_text, height=200, label_visibility="collapsed")
