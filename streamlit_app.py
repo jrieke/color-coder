@@ -2,7 +2,6 @@ import re
 
 import streamlit as st
 
-0/0
 def icon(emoji: str):
     """Shows an emoji as a Notion-style page icon."""
     st.write(
