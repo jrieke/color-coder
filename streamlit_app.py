@@ -12,8 +12,6 @@ def icon(emoji: str):
 
 st.set_page_config("Color-code your writing", "🌈")
 
-st.html('<a href="https://github.com/streamlit/streamlit" target="_top">Open top</a>')
-
 
 icon("🌈")
 st.title("Color-code your writing")
