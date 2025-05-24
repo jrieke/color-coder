@@ -12,6 +12,9 @@ def icon(emoji: str):
 
 st.set_page_config("Color-code your writing", "🌈")
 
+st.html('<a href="https://example.com" target="_self">Open in same tab</a>')
+
+
 icon("🌈")
 st.title("Color-code your writing")
 st.write(
