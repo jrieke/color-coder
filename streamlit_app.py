@@ -12,7 +12,7 @@ def icon(emoji: str):
 
 st.set_page_config("Color-code your writing", "🌈")
 
-st.html('<a href="https://github.com/streamlit/streamlit" target="_self">Open in same tab</a>')
+st.html('<a href="https://github.com/streamlit/streamlit" target="_parent">Open in same tab</a>')
 
 
 icon("🌈")
